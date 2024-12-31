@@ -42,13 +42,17 @@
 
 
 
+
+
+
+
 <html
   class="not-ready lg:text-base"
   style="--bg: #faf8f1"
   lang="zh-CN"
-  dir="rtl"
+  dir="ltr"
 >
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -71,7 +75,7 @@
     name="description"
     content="A personal blog"
   />
-  <meta name="author" content="freefall" />
+  <meta name="author" content="自由落体" />
   
 
   
@@ -80,26 +84,30 @@
   
   
   
-  <link rel="preload stylesheet" as="style" href="https://twocloudsinthesky.github.io/main.min.css" />
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
   
   
   
   
-  <link rel="preload" as="image" href="https://twocloudsinthesky.github.io/theme.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/theme.svg" />
 
   
   
   
   
-  <link rel="preload" as="image" href="GRAVATAR_CDN_LINKba8504934d706d7b5a1dc973c7b04a59?s=160&amp;d=identicon" />
+  <link rel="preload" as="image" href="https://cdn.v2ex.com/gravatar/ba8504934d706d7b5a1dc973c7b04a59?s=160&amp;d=identicon" />
   
   
 
   
   
-  <link rel="preload" as="image" href="https://twocloudsinthesky.github.io/rss.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/mastodon.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
   
   
 
@@ -152,11 +160,11 @@
   
   <link
     rel="icon"
-    href="https://twocloudsinthesky.github.io/favicon.ico"
+    href="https://raw.githubusercontent.com/twocloudsinthesky/PicP/main/pacman.png"
   />
   <link
     rel="apple-touch-icon"
-    href="https://twocloudsinthesky.github.io/apple-touch-icon.png"
+    href="http://localhost:1313/apple-touch-icon.png"
   />
 
   
@@ -165,42 +173,12 @@
   
   
   
-  
-  
-  
-  <meta itemprop="name" content="Categories">
-  
-  <meta property="og:url" content="https://twocloudsinthesky.github.io/categories/">
-  <meta property="og:site_name" content="跃入深蓝">
-  <meta property="og:title" content="Categories">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="website">
-
-  
-  
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Categories">
-
-  
-  
-  <link
-    rel="alternate"
-    type="application/rss&#43;xml"
-    href="https://twocloudsinthesky.github.io/categories/index.xml"
-    title="跃入深蓝"
-  />
-  
-
-  
-  <link rel="canonical" href="https://twocloudsinthesky.github.io/categories/" />
-  
-  
 </head>
 
   <body class="text-black duration-200 ease-out dark:text-white">
     <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
   <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
-    <a class="-translate-y-[1px] text-2xl font-medium" href="https://twocloudsinthesky.github.io/"
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
       >跃入深蓝</a
     >
     <div
@@ -274,8 +252,28 @@
       
       <a
         class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/freefall_V"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./mastodon.svg)"
+        href="https://pari.cafe/@freefall"
+        target="_blank"
+        rel="me"
+      >
+        mastodon
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./rss.svg)"
-        href="https://twocloudsinthesky.github.io/index.xml"
+        href="http://localhost:1313/index.xml"
         target="_blank"
         rel="alternate"
       >
@@ -315,7 +313,7 @@
   <div class="mr-auto">
   
     &copy; 2024
-    <a class="link" href="https://twocloudsinthesky.github.io/">跃入深蓝</a>
+    <a class="link" href="http://localhost:1313/">跃入深蓝</a>
   
   </div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
