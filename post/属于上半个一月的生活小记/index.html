@@ -1,0 +1,494 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="zh-CN"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>属于上半个一月的生活小记 - 跃入深蓝</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="开始写博客的第一个半月生活小记！在还未到本月15号之前，对于小记的组成部分还做了一点点规划，但现在当然差不多全忘光，只能对照着日历和嘟文看看我做了什么，当然结构也没有特别重要了。" />
+  <meta name="author" content="自由落体" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.svg" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://cdn.v2ex.com/gravatar/ba8504934d706d7b5a1dc973c7b04a59?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/mastodon.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="https://raw.githubusercontent.com/twocloudsinthesky/PicP/main/pacman.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.140.2">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
+      >跃入深蓝</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/freefall_V"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./mastodon.svg)"
+        href="https://pari.cafe/@freefall"
+        target="_blank"
+        rel="me"
+      >
+        mastodon
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="http://localhost:1313/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">属于上半个一月的生活小记</h1>
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      
+      
+        <span  class="meta">Posted on Tue, Jan 21, 2025 </br>
+       阅读 </span></span>| <span class="post-date">共2510字</span>，阅读约<span class="more-meta"> 6 分钟</span>
+    </div>
+    
+  </header>
+  
+
+  <section><p>开始写博客的第一个半月生活小记！在还未到本月15号之前，对于小记的组成部分还做了一点点规划，但现在当然差不多全忘光，只能对照着日历和嘟文看看我做了什么，当然结构也没有特别重要了。</p>
+<h3 id="是重要的小事">是重要的小事</h3>
+<h4 id="1新年第一个小时从插尿管开始">1.新年第一个小时从插尿管开始</h4>
+<p>很不幸的在2024.12.31排到了普外值班，当晚一18岁男性因“术后排尿困难”在家属的强烈要求下行导尿术。<br>
+23点之前试图通过热敷和活动等方式促进一下排尿，以便拖到第二天等明天的值班冤种再插，但很显然失败了！！不仅失败了还赶在23：30才通知护士姐姐。<br>
+总之我磨磨蹭蹭并打开bilibili导尿术示范视频临时抱一下佛脚等护士姐姐交完班给我准备物品，所以真的开插应该已过0点。本人第一次在真人身上插尿管怪紧张的，病人弟弟听到我说可能会很痛之后也很紧张，两个紧张的人在一起很显然并不会做成任何事……<br>
+尝试了两次仍然未见到小便流出，病人弟弟痛的有点受不了说“不插了不插了”，我放弃并唤二线，试图让二线解决这个尴尬的局面。<br>
+then刚把二线叫起来，陪床的妈妈就说病人弟弟自行排尿了。不管如何这个尴尬的局面至少是成功解套。护士姐姐说都是我的功劳，嗯……fine不管如何结果是好的。<br>
+下半夜本层还算夜无殊，可能是护士姐姐直接唤二线了，不管咯。</p>
+<h4 id="2剪了头发或者说上海之行">2.剪了头发！（或者说上海之行）</h4>
+<p>因为排班有3天连休，所以久违地动了去上海的念头。但上海能玩的差不多都玩了，没有很想逛街，看了迪士尼的票又害怕刚放寒假的小学生，想到自己一直想剪偏日系的头发，看了小红书几个有在日本进修过的女造型师博主，意外地成功乔到日期，遂出行！<br>
+我约的是Bella老师，她自己的工作室（茉朵造型）刚开业所以环境很好，洗头过程超绝舒适还带按摩，很不错！因为怕翻车所以参考图直接是从她的往期案例中挑选，其实我没有很在意披发造型只是需要一个纯正樱花妹刘海，所以成品其实大大超过我的预期！<br>
+当然日系造型绝对少不了湿发。尝试之前确实有些偏见但尝试完后深深爱上……我洗完头和起床之后炸开的头发抹上湿发发乳之后变得服帖和精致，真的好赞啊！唯一缺点是需要每天洗头，酷刑！（所以上班日从来不抹全头）<br>
+Bella老师推荐的是<em>Napla精油（柑橘香型）+玫丽盼1号发乳</em>1:1混合。但我自己觉得这套搭配偏沙龙而我的使用频率很低，所以用的是<em>Me&amp;Her（佑天兰）湿发发乳（粉蓝型）</em>，适当的香味和适当的湿度很适合新手！日常只抹刘海区域的话用量相当省。</p>
+<p><a href="https://raw.githubusercontent.com/twocloudsinthesky/PicP/main/IMG_9161.JPG">大概是这样的效果</a></p>
+<p>之后逛了美罗城和百联ZX，拍了和珍珍的Photonism大头贴，在最二次元的地方买了不怎么二次元的东西，回家！</p>
+<h4 id="3配了新的眼镜">3.配了新的眼镜</h4>
+<p>旧的眼镜框变形严重，应急戴的更旧的眼镜看东西总感觉雾雾的，赶时间就直接在线下的眼镜店配了。<br>
+<strong>1.56的明月PMC镜片+VanKor纯钛（？）架眼镜框=590大洋</strong><br>
+上一副全程线上购物的<em>1.56依视路膜岩镜片+β钛镜框</em>整个配好也才四百多啊！！<br>
+线下眼镜框真的大暴利！<br>
+但配完拿到手出门就觉得不对劲了，一开始还以为换了透光度高的镜片没有适应，后来发现夜间以及看灯牌一类的散光及模糊严重，绝对不可能是不适应的问题啊！回到店里重新测了各项数据发现散光的轴向搞错了，斜视35°配成了正位60°……很难不去质疑一下验光师的专业性。<br>
+之后戴上调过的眼镜就正常了。<br>
+以及看小红书博主安利到了国产车房自由环面镜片（一种特殊的镜片加工工艺，蔡司智锐采用的即此工艺），说是适合散光及屈光参差用户，而本人不幸俩都占了。看了一下价格也很具有性价比遂下单。<br>
+<strong>1.50欧陆智造自由环面镜片+半钛框=178</strong><br>
+写这篇博文的时候正好收到快递，但懒得马上拆了，所以使用心得等下一篇生活小记再说。</p>
+<h4 id="4关于芭蕾">4.关于芭蕾</h4>
+<p>其实一直犹豫要不要把这件事写进来，因为还算蛮负面的，但还是记一下吧。<br>
+第三期固定班上周开课，上完两节觉得在陪课+无新进度，和同学讨论后有同感，在退课和忍耐之间选择了默默蛐蛐。第二节课上完后在pari咖啡写了<a href="https://pari.cafe/notes/a37ermuk78fe2nln">这些思考</a>，并隐去了部分细节发在小红书上。（当然特别声明了不是避雷贴，并且没有指名道姓）<br>
+结果收到了比预想大的多的流量，老师本人反正也刷到了，第二天早上就在固定班群大破防，试图继续PUA并将评论区的部分言论归咎在我身上。显然我并不认同他的整个做法并且对于他的印象变得更差了……虽然这可能是我能上到最好的芭蕾课（纯技术及教学层面）但还是say goodbye了。没想到元旦汇演收到老师手写信的时候大家都还开开心心，结果下头的那么快。<br>
+小红书有人说老师像“黄子韬”，我非常赞同，不想继续和情绪不稳定的男的继续待在一起。<br>
+我因为没有课时卡在手，再加上老师本人“开除/退学”言论以及停止固定班的冲动行为，相当于机构单方面违约全额退款，差不多全身而退对我来说没有太大的影响。但我是真心希望我这么一闹老师可以稍微克制一下言语，改善一下toxic的中国式教学方法，让机构其他在读同学的上课环境变得更好一些。如果真能改我觉得这个机构没啥特别值得挑剔的地方，但很显然这位老师是听不进去一点批评的。<br>
+年后准备去其他机构试课或者去上海上体验课！我的芭蕾搭子还在！我也还是很爱芭蕾的！</p>
+<h3 id="影像记录">影像记录</h3>
+<p>显然没在看书（专业书除外），播客和音乐因为太多太杂记录的意义并不大，so书影音砍成了影像记录，毕竟剧集和影片是最方便的娱乐方式了。<br>
+本月终于发掘了Emby用法，使用了机场带的Emby实现看片相对自由，很不错！</p>
+<h4 id="已看完">已看完</h4>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Title</th>
+          <th style="text-align: center">评分</th>
+          <th style="text-align: center">NeoDB链接</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">头号外交官S01+S02（2023/2024）</td>
+          <td style="text-align: center">4🌟</td>
+          <td style="text-align: center"><a href="https://neodb.social/tv/season/3iFSpTy1bvWyTM3GQ8rmnx">S01</a>/<a href="https://neodb.social/tv/season/6d13Oh008x79WqwrJuqGLs">S02</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">去唱卡拉OK吧！（2023）</td>
+          <td style="text-align: center">4.5🌟</td>
+          <td style="text-align: center"><a href="https://neodb.social/movie/5rEg6G2ejAnn5RbybeEkYd">Enter</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">非快速眼动之窗2025新春（2025）</td>
+          <td style="text-align: center">4.5🌟</td>
+          <td style="text-align: center"><a href="https://neodb.social/tv/season/6vfc2FJQNOkc4tfJXc3WdY">Enter</a></td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="正在看">正在看</h4>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Title</th>
+          <th style="text-align: center">进度</th>
+          <th style="text-align: center">NeoDB链接</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">正念谋杀（2024）</td>
+          <td style="text-align: center">4/8</td>
+          <td style="text-align: center"><a href="https://neodb.social/tv/season/1suDyAgX2FMfiujZCqqDfo">Enter</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">匹兹堡医护前线（2025）</td>
+          <td style="text-align: center">2/15</td>
+          <td style="text-align: center"><a href="https://neodb.social/tv/season/6TnqhHje7ksYwjnbSBz68Q">Enter</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">国色芳华（2025）</td>
+          <td style="text-align: center">?/32</td>
+          <td style="text-align: center"><a href="https://neodb.social/tv/season/6NrBwZfrBvfASIEew9FJbe">Enter</a></td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="想看">想看</h4>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Title</th>
+          <th style="text-align: center">NeoDB链接</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">首尔之春（2023）</td>
+          <td style="text-align: center"><a href="https://neodb.social/movie/6rjVMh6bdr8u0LJBAKf8Td">Enter</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">魔法坏女巫（2024）</td>
+          <td style="text-align: center"><a href="https://neodb.social/movie/2RS9kHhKSnbGE6fjVZWoXM">Enter</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">白宫风云S01（1999）</td>
+          <td style="text-align: center"><a href="https://neodb.social/tv/season/5fRZqcyxm4uMdQS1V5FnS2">Enter</a></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="自由书写">自由书写</h3>
+<p>论文被拒两次，有点伤心但还可以接受吧，准备年后继续！<br>
+和老板说了年后开始进实验室，老板表示加油！期待我去德国吃牛排（？）<br>
+疯狂上班已经麻木，明天终于可以休息了TT虽然休一天但马上有春节假了还可以接受。<br>
+好冷又好热的杭州，小心不要感冒！<br>
+坐在椅子上写到这里觉得腰好痛……不知不觉也写了两个小时了呢，那就到这里吧！</p>
+<p><strong>下次见！</strong></p>
+</section>
+
+  
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0"
+      >生活小记</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="http://localhost:1313/post/%E8%B5%B0%E4%B8%80%E7%82%B9%E5%BC%AF%E8%B7%AF/"
+      ><span>走一点弯路——建博客也不是那么容易哇</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+
+  
+
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2025
+    <a class="link" href="http://localhost:1313/">跃入深蓝</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>

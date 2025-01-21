@@ -52,7 +52,7 @@
   lang="zh-CN"
   dir="ltr"
 >
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -70,42 +70,7 @@
   
   
   
-  <meta name="description" content="光看教程觉得建基于Hugo的博客还是很简单的嘛毕竟只有几行代码，但实际做的时候发现还是很容易踩坑的。但幸好今天值班💔，可以有一个晚上的空闲时间来钻研一下这个东西。
-Hugo本体的安装其实非常简单，MacOs 的终端和brew让安装Hugo变成执行一行代码的过程，所以翻车原因不在这里。
-翻车部分主要在于怎样把Hugo和Github pages关联起来。
-这部分主要参考了以下几个教程：
-1.利用Hugo&#43;Github Pages搭建个人博客 - Serendiplay
-2.使用 Github、Hugo 搭建个人博客_hugo教程
-在搭建完成以后回过头复盘，其实可以看出来整个逻辑挺简单的。
-即使用Hugo生成一个静态网页，把包含这个网页信息的public文件夹通过git语法远程上传到github上已经搭建好的repo里。
-但各教程中指令稍有冲突（或者说指令模糊），最开始试图把它们大杂烩起来但很显然这样做并不明智。于是推库（？）重建，再多次尝试以后终于成功了。
-姑且放上一些我踩到的坑。
-Mistake1：忘了把本地的git库和远程库连起来。
-通过删库重新输代码解决，很笨但有效。
-Mistake2：分支名错误（git pull命令报错）
-当前分支没有跟踪信息。
-请指定您要合并哪一个分支。
-详见 git-pull(1)。
-
-    git pull &lt;remote&gt; &lt;branch&gt;
-
-如果您想要为此分支创建跟踪信息，您可以执行：
-
-    git branch --set-upstream-to=origin/&lt;branch&gt; master
-不知道为什么实际生成的分支是origin/main,而所有提供的教程里远程上传用的都是main。
-最后把main追踪到origin/main解决。多谢提示！
-git branch –set-upstream-to=origin/main main 
-Mistake3：远程上传拒绝请求
-出现过以下两种情况
-error: 无法推送一些引用到 ‘git@github.com:xxx’
-提示：更新被拒绝，因为远程版本库包含您本地尚不存在的提交。这通常是因为另外
-提示：一个版本库已推送了相同的引用。再次推送前，您可能需要先合并远程变更
-提示：（如 ‘git pull’）。
-提示：详见 ‘git push –help’ 中的 ‘Note about fast-forwards’ 小节。
-提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。
-提示：再次推送前，先与远程变更合并（如 &#39;git pull ...&#39;）。详见
-提示：&#39;git push --help&#39; 中的 &#39;Note about fast-forwards&#39; 小节
-本质就是远程和本地库的不同步。但网上的解决方案大多都是先用fetch再用merge指令，但我一merge就提示无效，大概是又绕回到mistake2上。解决了2，3也就解决了。" />
+  <meta name="description" content="光看教程觉得建基于Hugo的博客还是很简单的嘛毕竟只有几行代码，但实际做的时候发现还是很容易踩坑的。但幸好今天值班💔，可以有一个晚上的空闲时间来钻研一下这个东西。" />
   <meta name="author" content="自由落体" />
   
 
@@ -115,14 +80,14 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’
   
   
   
-  <link rel="preload stylesheet" as="style" href="https://twocloudsinthesky.github.io/main.min.css" />
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
   
   
   
   
-  <link rel="preload" as="image" href="https://twocloudsinthesky.github.io/theme.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/theme.svg" />
 
   
   
@@ -134,11 +99,11 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’
 
   
   
-  <link rel="preload" as="image" href="https://twocloudsinthesky.github.io/twitter.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
   
-  <link rel="preload" as="image" href="https://twocloudsinthesky.github.io/mastodon.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/mastodon.svg" />
   
-  <link rel="preload" as="image" href="https://twocloudsinthesky.github.io/rss.svg" />
+  <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
   
   
 
@@ -146,7 +111,7 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’
   
   <script
     defer
-    src="https://twocloudsinthesky.github.io/highlight.min.js"
+    src="http://localhost:1313/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
   
@@ -201,7 +166,7 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’
   />
   <link
     rel="apple-touch-icon"
-    href="https://twocloudsinthesky.github.io/apple-touch-icon.png"
+    href="http://localhost:1313/apple-touch-icon.png"
   />
 
   
@@ -210,79 +175,12 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’
   
   
   
-  
-  
-  
-  <meta itemprop="name" content="走一点弯路——建博客也不是那么容易哇">
-  <meta itemprop="description" content="光看教程觉得建基于Hugo的博客还是很简单的嘛毕竟只有几行代码，但实际做的时候发现还是很容易踩坑的。但幸好今天值班💔，可以有一个晚上的空闲时间来钻研一下这个东西。
-Hugo本体的安装其实非常简单，MacOs 的终端和brew让安装Hugo变成执行一行代码的过程，所以翻车原因不在这里。
-翻车部分主要在于怎样把Hugo和Github pages关联起来。
-这部分主要参考了以下几个教程：
-1.利用Hugo&#43;Github Pages搭建个人博客 - Serendiplay
-2.使用 Github、Hugo 搭建个人博客_hugo教程
-在搭建完成以后回过头复盘，其实可以看出来整个逻辑挺简单的。 即使用Hugo生成一个静态网页，把包含这个网页信息的public文件夹通过git语法远程上传到github上已经搭建好的repo里。
-但各教程中指令稍有冲突（或者说指令模糊），最开始试图把它们大杂烩起来但很显然这样做并不明智。于是推库（？）重建，再多次尝试以后终于成功了。 姑且放上一些我踩到的坑。
-Mistake1：忘了把本地的git库和远程库连起来。 通过删库重新输代码解决，很笨但有效。
-Mistake2：分支名错误（git pull命令报错） 当前分支没有跟踪信息。 请指定您要合并哪一个分支。 详见 git-pull(1)。 git pull &lt;remote&gt; &lt;branch&gt; 如果您想要为此分支创建跟踪信息，您可以执行： git branch --set-upstream-to=origin/&lt;branch&gt; master 不知道为什么实际生成的分支是origin/main,而所有提供的教程里远程上传用的都是main。 最后把main追踪到origin/main解决。多谢提示！
-git branch –set-upstream-to=origin/main main Mistake3：远程上传拒绝请求 出现过以下两种情况
-error: 无法推送一些引用到 ‘git@github.com:xxx’ 提示：更新被拒绝，因为远程版本库包含您本地尚不存在的提交。这通常是因为另外 提示：一个版本库已推送了相同的引用。再次推送前，您可能需要先合并远程变更 提示：（如 ‘git pull’）。 提示：详见 ‘git push –help’ 中的 ‘Note about fast-forwards’ 小节。 提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。 提示：再次推送前，先与远程变更合并（如 &#39;git pull ...&#39;）。详见 提示：&#39;git push --help&#39; 中的 &#39;Note about fast-forwards&#39; 小节 本质就是远程和本地库的不同步。但网上的解决方案大多都是先用fetch再用merge指令，但我一merge就提示无效，大概是又绕回到mistake2上。解决了2，3也就解决了。">
-  <meta itemprop="datePublished" content="2024-12-31T18:50:16+08:00">
-  <meta itemprop="dateModified" content="2024-12-31T18:50:16+08:00">
-  <meta itemprop="wordCount" content="97">
-  <meta itemprop="keywords" content="技术流">
-  
-  <meta property="og:url" content="https://twocloudsinthesky.github.io/post/%E8%B5%B0%E4%B8%80%E7%82%B9%E5%BC%AF%E8%B7%AF/">
-  <meta property="og:site_name" content="跃入深蓝">
-  <meta property="og:title" content="走一点弯路——建博客也不是那么容易哇">
-  <meta property="og:description" content="光看教程觉得建基于Hugo的博客还是很简单的嘛毕竟只有几行代码，但实际做的时候发现还是很容易踩坑的。但幸好今天值班💔，可以有一个晚上的空闲时间来钻研一下这个东西。
-Hugo本体的安装其实非常简单，MacOs 的终端和brew让安装Hugo变成执行一行代码的过程，所以翻车原因不在这里。
-翻车部分主要在于怎样把Hugo和Github pages关联起来。
-这部分主要参考了以下几个教程：
-1.利用Hugo&#43;Github Pages搭建个人博客 - Serendiplay
-2.使用 Github、Hugo 搭建个人博客_hugo教程
-在搭建完成以后回过头复盘，其实可以看出来整个逻辑挺简单的。 即使用Hugo生成一个静态网页，把包含这个网页信息的public文件夹通过git语法远程上传到github上已经搭建好的repo里。
-但各教程中指令稍有冲突（或者说指令模糊），最开始试图把它们大杂烩起来但很显然这样做并不明智。于是推库（？）重建，再多次尝试以后终于成功了。 姑且放上一些我踩到的坑。
-Mistake1：忘了把本地的git库和远程库连起来。 通过删库重新输代码解决，很笨但有效。
-Mistake2：分支名错误（git pull命令报错） 当前分支没有跟踪信息。 请指定您要合并哪一个分支。 详见 git-pull(1)。 git pull &lt;remote&gt; &lt;branch&gt; 如果您想要为此分支创建跟踪信息，您可以执行： git branch --set-upstream-to=origin/&lt;branch&gt; master 不知道为什么实际生成的分支是origin/main,而所有提供的教程里远程上传用的都是main。 最后把main追踪到origin/main解决。多谢提示！
-git branch –set-upstream-to=origin/main main Mistake3：远程上传拒绝请求 出现过以下两种情况
-error: 无法推送一些引用到 ‘git@github.com:xxx’ 提示：更新被拒绝，因为远程版本库包含您本地尚不存在的提交。这通常是因为另外 提示：一个版本库已推送了相同的引用。再次推送前，您可能需要先合并远程变更 提示：（如 ‘git pull’）。 提示：详见 ‘git push –help’ 中的 ‘Note about fast-forwards’ 小节。 提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。 提示：再次推送前，先与远程变更合并（如 &#39;git pull ...&#39;）。详见 提示：&#39;git push --help&#39; 中的 &#39;Note about fast-forwards&#39; 小节 本质就是远程和本地库的不同步。但网上的解决方案大多都是先用fetch再用merge指令，但我一merge就提示无效，大概是又绕回到mistake2上。解决了2，3也就解决了。">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2024-12-31T18:50:16+08:00">
-    <meta property="article:modified_time" content="2024-12-31T18:50:16+08:00">
-    <meta property="article:tag" content="技术流">
-
-  
-  
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="走一点弯路——建博客也不是那么容易哇">
-  <meta name="twitter:description" content="光看教程觉得建基于Hugo的博客还是很简单的嘛毕竟只有几行代码，但实际做的时候发现还是很容易踩坑的。但幸好今天值班💔，可以有一个晚上的空闲时间来钻研一下这个东西。
-Hugo本体的安装其实非常简单，MacOs 的终端和brew让安装Hugo变成执行一行代码的过程，所以翻车原因不在这里。
-翻车部分主要在于怎样把Hugo和Github pages关联起来。
-这部分主要参考了以下几个教程：
-1.利用Hugo&#43;Github Pages搭建个人博客 - Serendiplay
-2.使用 Github、Hugo 搭建个人博客_hugo教程
-在搭建完成以后回过头复盘，其实可以看出来整个逻辑挺简单的。 即使用Hugo生成一个静态网页，把包含这个网页信息的public文件夹通过git语法远程上传到github上已经搭建好的repo里。
-但各教程中指令稍有冲突（或者说指令模糊），最开始试图把它们大杂烩起来但很显然这样做并不明智。于是推库（？）重建，再多次尝试以后终于成功了。 姑且放上一些我踩到的坑。
-Mistake1：忘了把本地的git库和远程库连起来。 通过删库重新输代码解决，很笨但有效。
-Mistake2：分支名错误（git pull命令报错） 当前分支没有跟踪信息。 请指定您要合并哪一个分支。 详见 git-pull(1)。 git pull &lt;remote&gt; &lt;branch&gt; 如果您想要为此分支创建跟踪信息，您可以执行： git branch --set-upstream-to=origin/&lt;branch&gt; master 不知道为什么实际生成的分支是origin/main,而所有提供的教程里远程上传用的都是main。 最后把main追踪到origin/main解决。多谢提示！
-git branch –set-upstream-to=origin/main main Mistake3：远程上传拒绝请求 出现过以下两种情况
-error: 无法推送一些引用到 ‘git@github.com:xxx’ 提示：更新被拒绝，因为远程版本库包含您本地尚不存在的提交。这通常是因为另外 提示：一个版本库已推送了相同的引用。再次推送前，您可能需要先合并远程变更 提示：（如 ‘git pull’）。 提示：详见 ‘git push –help’ 中的 ‘Note about fast-forwards’ 小节。 提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。 提示：再次推送前，先与远程变更合并（如 &#39;git pull ...&#39;）。详见 提示：&#39;git push --help&#39; 中的 &#39;Note about fast-forwards&#39; 小节 本质就是远程和本地库的不同步。但网上的解决方案大多都是先用fetch再用merge指令，但我一merge就提示无效，大概是又绕回到mistake2上。解决了2，3也就解决了。">
-
-  
-  
-
-  
-  <link rel="canonical" href="https://twocloudsinthesky.github.io/post/%E8%B5%B0%E4%B8%80%E7%82%B9%E5%BC%AF%E8%B7%AF/" />
-  
-  
 </head>
 
   <body class="text-black duration-200 ease-out dark:text-white">
     <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
   <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
-    <a class="-translate-y-[1px] text-2xl font-medium" href="https://twocloudsinthesky.github.io/"
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
       >跃入深蓝</a
     >
     <div
@@ -377,7 +275,7 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’ 提示：更新被�
       <a
         class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./rss.svg)"
-        href="https://twocloudsinthesky.github.io/index.xml"
+        href="http://localhost:1313/index.xml"
         target="_blank"
         rel="alternate"
       >
@@ -398,18 +296,17 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’ 提示：更新被�
 <article>
   <header class="mb-14">
     <h1 class="!my-0 pb-2.5">走一点弯路——建博客也不是那么容易哇</h1>
-
     
     <div class="text-xs antialiased opacity-60">
       
-      <time>Dec 31, 2024</time>
       
       
-      
-      
+        <span  class="meta">Posted on Tue, Dec 31, 2024 </br>
+       阅读 </span></span>| <span class="post-date">共1406字</span>，阅读约<span class="more-meta"> 3 分钟</span>
     </div>
     
   </header>
+  
 
   <section><p>光看教程觉得建基于Hugo的博客还是很简单的嘛毕竟只有几行代码，但实际做的时候发现还是很容易踩坑的。但幸好今天值班💔，可以有一个晚上的空闲时间来钻研一下这个东西。</p>
 <p>Hugo本体的安装其实非常简单，MacOs 的终端和brew让安装Hugo变成执行一行代码的过程，所以翻车原因不在这里。</p>
@@ -464,13 +361,19 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’ 提示：更新被�
 <p>最后提前祝大家新年快乐！♪٩(´ω`)و♪</p>
 </section>
 
+  <div style="margin-left: -2px; font-weight: 700; padding-bottom: 8px;">Table of contents</div>
+  <div class="td-toc">        
+    /Users/zzyandyuzu/freefall-pool/content/post/走一点弯路.md
+  </div>  
+
+  
   
   
   <footer class="mt-12 flex flex-wrap">
      
     <a
       class="mb-1.5 ltr:mr-1.5 rtl:ml-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="https://twocloudsinthesky.github.io/tags/%E6%8A%80%E6%9C%AF%E6%B5%81"
+      href="http://localhost:1313/tags/%E6%8A%80%E6%9C%AF%E6%B5%81"
       >技术流</a
     >
     
@@ -479,55 +382,24 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’ 提示：更新被�
 
   
   
-
   
   
-  <div class="mt-24" id="disqus_thread"></div>
-  <script>
-    const disqusShortname = 'freefall';
-    const script = document.createElement('script');
-    script.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
-    script.setAttribute('data-timestamp', +new Date());
-    document.head.appendChild(script);
-  </script>
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/%E5%B1%9E%E4%BA%8E%E4%B8%8A%E5%8D%8A%E4%B8%AA%E4%B8%80%E6%9C%88%E7%9A%84%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>属于上半个一月的生活小记</span></a
+    >
+    
+    
+  </nav>
   
-
-  
-  
-  <div class="mt-24" id="graphcomment"></div>
-  <script type="text/javascript">
-    var __semio__params = {
-      graphcommentId: 'freefall',
-      behaviour: {
-        
-      },
-      
-    };
-
-    function __semio__onload() {
-      __semio__gc_graphlogin(__semio__params);
-    }
-
-    (function () {
-      var gc = document.createElement('script');
-      gc.type = 'text/javascript';
-      gc.async = true;
-      gc.onload = __semio__onload;
-      gc.defer = true;
-      gc.src =
-        'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
-      (
-        document.getElementsByTagName('head')[0] ||
-        document.getElementsByTagName('body')[0]
-      ).appendChild(gc);
-    })();
-  </script>
-  
-
   
 
 
   
+
 </article>
 
 
@@ -538,8 +410,8 @@ error: 无法推送一些引用到 ‘git@github.com:xxx’ 提示：更新被�
 >
   <div class="mr-auto">
   
-    &copy; 2024
-    <a class="link" href="https://twocloudsinthesky.github.io/">跃入深蓝</a>
+    &copy; 2025
+    <a class="link" href="http://localhost:1313/">跃入深蓝</a>
   
   </div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
