@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生活小记 on 跃入深蓝</title>
-    <link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/</link>
+    <link>https://twocloudsinthesky.github.io/tags/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/</link>
     <description>Recent content in 生活小记 on 跃入深蓝</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 21 Jan 2025 20:32:19 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://twocloudsinthesky.github.io/tags/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>属于上半个一月的生活小记</title>
-      <link>http://localhost:1313/post/%E5%B1%9E%E4%BA%8E%E4%B8%8A%E5%8D%8A%E4%B8%AA%E4%B8%80%E6%9C%88%E7%9A%84%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/</link>
+      <link>https://twocloudsinthesky.github.io/post/%E5%B1%9E%E4%BA%8E%E4%B8%8A%E5%8D%8A%E4%B8%AA%E4%B8%80%E6%9C%88%E7%9A%84%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/</link>
       <pubDate>Tue, 21 Jan 2025 20:32:19 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E5%B1%9E%E4%BA%8E%E4%B8%8A%E5%8D%8A%E4%B8%AA%E4%B8%80%E6%9C%88%E7%9A%84%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/</guid>
+      <guid>https://twocloudsinthesky.github.io/post/%E5%B1%9E%E4%BA%8E%E4%B8%8A%E5%8D%8A%E4%B8%AA%E4%B8%80%E6%9C%88%E7%9A%84%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/</guid>
       <description>&lt;p&gt;开始写博客的第一个半月生活小记！在还未到本月15号之前，对于小记的组成部分还做了一点点规划，但现在当然差不多全忘光，只能对照着日历和嘟文看看我做了什么，当然结构也没有特别重要了。&lt;/p&gt;</description>
     </item>
   </channel>

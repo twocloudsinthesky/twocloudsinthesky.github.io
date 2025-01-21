@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 跃入深蓝</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://twocloudsinthesky.github.io/categories/</link>
     <description>Recent content in Categories on 跃入深蓝</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 21 Jan 2025 20:32:19 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://twocloudsinthesky.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LifeMemo</title>
-      <link>http://localhost:1313/categories/lifememo/</link>
+      <link>https://twocloudsinthesky.github.io/categories/lifememo/</link>
       <pubDate>Tue, 21 Jan 2025 20:32:19 +0800</pubDate>
-      <guid>http://localhost:1313/categories/lifememo/</guid>
+      <guid>https://twocloudsinthesky.github.io/categories/lifememo/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>http://localhost:1313/categories/technology/</link>
+      <link>https://twocloudsinthesky.github.io/categories/technology/</link>
       <pubDate>Tue, 31 Dec 2024 18:50:16 +0800</pubDate>
-      <guid>http://localhost:1313/categories/technology/</guid>
+      <guid>https://twocloudsinthesky.github.io/categories/technology/</guid>
       <description></description>
     </item>
   </channel>
