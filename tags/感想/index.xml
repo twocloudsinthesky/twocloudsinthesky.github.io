@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>感想 on 跃入深蓝</title>
     <link>https://twocloudsinthesky.github.io/tags/%E6%84%9F%E6%83%B3/</link>
-    <description>Recent content in 感想 on 跃入深蓝</description>
+    <description>Recent content on 跃入深蓝</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 06 Oct 2025 20:49:52 +0800</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>https://twocloudsinthesky.github.io/post/%E7%BB%99%E6%96%B0%E5%86%A2%E9%A5%AD%E7%9A%84%E8%A7%82%E5%89%A7%E9%A1%BA%E5%BA%8F%E9%80%BB%E8%BE%91%E8%B0%88/</link>
       <pubDate>Mon, 06 Oct 2025 20:49:52 +0800</pubDate>
       <guid>https://twocloudsinthesky.github.io/post/%E7%BB%99%E6%96%B0%E5%86%A2%E9%A5%AD%E7%9A%84%E8%A7%82%E5%89%A7%E9%A1%BA%E5%BA%8F%E9%80%BB%E8%BE%91%E8%B0%88/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;注意：以下均为班门弄斧一家之言，怎么看剧均为个人自由。本人看宝塚时间也没有很长，只是一些心得，可以帮助新饭将观剧体验从50分拉到70分这样。&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>从喜欢的生徒出发，慢慢走进宝塚的剧场与故事。一份给新饭的观剧路线参考。</description>
     </item>
   </channel>
 </rss>
